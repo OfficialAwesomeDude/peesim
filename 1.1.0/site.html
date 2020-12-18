@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Peeing Sim</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <img id="mi" src="resources/help-circle.svg" onclick="if (elements.sidebar.open == false) {
+                elements.sidebar.sidebar.style.left = 0
+                elements.sidebar.button.style.left = '260px'
+                elements.sidebar.open = true
+            } else {
+                elements.sidebar.sidebar.style.left = '-250px'
+                elements.sidebar.button.style.left = '10px'
+                elements.sidebar.open = false
+            }">
+            <img id="logo" src="resources/logo.png">
+        </div>
+        <script src="script.js" defer>
+            
+        </script>
+        <div id="buttons">
+            <button id="drink">
+                drink
+            </button>
+            <button id="pee">
+                pee
+            </button>
+        </div>
+        <div id="outline">
+            <div id="bar">
+            </div>
+        </div>
+        <div id="change">
+            <ul>
+                <li color="rgb(255,0,0)">Red</li>
+                <li color="rgb(255,255,0)">Yellow</li>
+                <li color="rgb(37, 151, 54)">Green</li>
+                <li color="rgb(0,15,255)">Blue</li>
+                <li color="rgb(202, 0, 142)">Pink</li>
+                <li color="rgb(0, 0, 0)">black on black on black on black on black</li>
+            </ul>
+        </div>
+        <div id="sidebar">
+            <div id="title">More Information</div>
+            <p>
+                This is exactly what it seems, a peeing simulator. Nothing too special but just something to play around with. A quick side project me and <span id="jude"><a href="https://github.com/ROSCO3CR34TS">Jude Parzybok</a></span>. Some of the things we encountered while making this project were very, very frustrating and we had to perservere through a lot.
+            </p>
+            <p>
+                When making the pee bar, we struggled for a bit to get it to increase slowly and at a consistent rate, although we did persearvare. The way we did it can be found on the <span id="git">GitHub</span> of the website. Another thing we struggled with was making the colors at the buttom be interactive. I hope you have fun playing around with this!
+            </p>
+            <p>
+                If you have any ideas about how to make it more advanced, or ideas to add, contact me and let me know! I would be very happy to incorporate your ideas in, as we are looking for more ways to make it better.
+            </p>
+        </div>
+    </body>
+</html>
